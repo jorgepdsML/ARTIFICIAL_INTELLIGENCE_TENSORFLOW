@@ -47,8 +47,10 @@ metric=["accuracy"]
 CNN_model.compile(optimizer,loss=loss_,metrics=metric)
 #-------------------------fit method-----------------
 #use of the fit method for the training of the CNN
-#number of epochs
-N_epochs=1
+#number of epochs , you can tailor it for your application
+#the more epochs there are , the longer the algorithm will take
+N_epochs=3
+
 #number of data points for using in the batch
 Batch_size=50
 #use of to_categorical to convert integer data to a binary matrix data to use in the fit method
@@ -69,3 +71,4 @@ print(Matrix)
 accuracy=accuracy_score(test_labels,np.argmax(predi,axis=1))
 print("ACCURACY ",accuracy)
 #--------------------finish-------------
+#youtube channel jorge miranda redes neuronales
