@@ -1,3 +1,5 @@
+#written by jorge orlando miranda ñahui
+#import the neccesary modules
 import numpy as np
 import mnist
 from keras.models import  Sequential
@@ -49,7 +51,7 @@ CNN_model.compile(optimizer,loss=loss_,metrics=metric)
 N_epochs=1
 #number of data points for using in the batch
 Batch_size=50
-
+#use of to_categorical to convert integer data to a binary matrix data to use in the fit method
 CNN_model.fit(norm_train,to_categorical(train_labels),epochs=N_epochs,batch_size=Batch_size,shuffle=True,validation_data=(test_images, to_categorical(test_labels)))
 
 #save the weights in a hdf5 file to use in other scripts
@@ -66,3 +68,4 @@ print(Matrix)
 #accuracy
 accuracy=accuracy_score(test_labels,np.argmax(predi,axis=1))
 print("ACCURACY ",accuracy)
+#--------------------finish-------------
