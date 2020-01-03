@@ -1,4 +1,4 @@
-#written by jorge orlando miranda ;ahui
+#written by jorge orlando miranda ñahui
 #youtube channel : jorge miranda redes neuronales
 """
 in this example , i will show you how to implement 2 basic operatons using
