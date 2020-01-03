@@ -2,8 +2,9 @@
 #youtube channel : jorge miranda redes neuronales
 """
 in this example , i will show you how to implement 2 basic operatons using
-tensorflow graph , firts of all in tensorflow 2 , eager execution is enabled
-by default (operations on tensor objects don't need graph to be executed
+tensorflow graph .Firt of all ,in tensorflow 2  eager execution is enabled
+by default (operations on tensor objects don't need graph to be executed)
+in this file , we well disable eager execution to build a graph and then execute using a Session object
 """
 import numpy as np
 import tensorflow as tf
@@ -28,6 +29,6 @@ print(result)
 #the first argument is the name of a directory that will save event files
 #the second argument choose which graph will be launched in tensorboard
 writer=tf.compat.v1.summary.FileWriter('grafo1',graph=tf.compat.v1.get_default_graph())
-#close the session
+#close the session object and release the resources 
 sesion1.close()
 
