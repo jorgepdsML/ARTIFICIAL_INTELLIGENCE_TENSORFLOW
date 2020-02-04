@@ -6,7 +6,7 @@ https://github.com/jorgepdsML
 INTELLIGENCE ARTIFICIAL
 
 ADAptive LInear NEuron (ADALINE)
-to built the ADALINE arquitectura using tensorflow , we need to
+to built the ADALINE arquitecture using tensorflow , we need to
 specify if we want to disable the eager execution mode or not
 1 - by default eager execution is enabled (it does not need session to run graph)
 2 -using tf.compat.v1.disable_eager_execution() , we will use graph as in
