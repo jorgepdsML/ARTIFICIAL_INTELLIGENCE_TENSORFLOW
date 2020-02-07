@@ -13,6 +13,11 @@ from keras.layers import Conv2D
 modelo=Sequential()
 #--------------------Crear capa Conv2D
 layer1=Conv2D(filters=1,kernel_size=3,strides=1,padding="valid",input_shape=(4,4,1))
+#filters indica la cantidad de filtros
+#kernel_size la dimension del kernel 3x3
+#strides=1 paso de uno en uno
+#padding="valid" datos validos de entrada
+#input_shape=(Nfi,Nci,channels_Entrada)
 #---------------agregar la capa Conv2D al modelo Sequential
 modelo.add(layer1)
 #dimensión del kernel (Nfilas,Ncolumnas,Ncanales,Nfilters)
