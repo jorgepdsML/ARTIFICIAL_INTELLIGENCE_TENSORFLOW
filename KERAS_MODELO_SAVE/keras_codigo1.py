@@ -4,8 +4,8 @@
 import tensorflow as tf
 import numpy as np
 from keras.initializers import Zeros,Ones
-from keras.models import load_model,Sequential
-from keras.layers import Conv2D , MaxPooling2D,Dropout,BatchNormalization
+from keras.models import Sequential
+from keras.layers import Conv2D , MaxPooling2D
 #crear el modelo Sequential
 modelo=Sequential()
 conv1=Conv2D(filters=1,
