@@ -1,6 +1,7 @@
 #written by jorge orlando miranda ñahui
 #ARTIFICIAL INTELLIGENCE AND IMAGE PROCESSING
 #github => jorgepdsML
+#BRAINTELS 
 import tensorflow as tf
 import numpy as np
 from keras.initializers import Zeros,Ones
